@@ -1,0 +1,31 @@
+
+:root{
+  --bg:#0b1e19;--bg2:#102a24;--green:#173a31;--gold:#c7a064;
+  --gold2:#ead4a5;--ivory:#f3eee5;--muted:#bdbab2;--line:rgba(234,212,165,.2)
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ivory);font-family:"Cairo",sans-serif;overflow-x:hidden}
+img{max-width:100%;display:block}a{color:inherit}
+.site-header{position:fixed;top:0;left:0;right:0;z-index:30;display:flex;align-items:center;justify-content:space-between;padding:18px 5vw;background:linear-gradient(to bottom,rgba(5,15,12,.88),transparent);backdrop-filter:blur(7px)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:"Montserrat";letter-spacing:.25em;font-weight:600}.brand img{width:42px;height:42px;object-fit:cover;border-radius:10px}.nav{display:flex;gap:28px}.nav a{text-decoration:none;font-size:14px;color:#e8e3da}.nav a:hover{color:var(--gold2)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:white;border-radius:10px;padding:8px 12px;font-size:20px}
+.section{padding:100px 6vw}.narrow{width:min(880px,88vw);margin:auto;text-align:center}
+.hero{min-height:100svh;position:relative;display:flex;align-items:center;background:url("assets/product-11.jpg") center/cover no-repeat;padding-top:120px}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,19,15,.95) 0%,rgba(6,19,15,.77) 42%,rgba(6,19,15,.2) 100%),linear-gradient(to top,rgba(6,19,15,.85),transparent 55%)}
+.hero-content{position:relative;z-index:2;max-width:720px}.eyebrow{font-family:"Montserrat";letter-spacing:.25em;color:var(--gold);font-size:12px}
+h1,h2,h3,p{margin-top:0}h1{font-size:clamp(48px,8vw,94px);line-height:1.08;margin:18px 0 24px;font-weight:500}h1 em{font-style:normal;color:var(--gold2)}h2{font-size:clamp(34px,5vw,62px);line-height:1.25;margin:15px 0 20px;font-weight:500}h3{font-size:24px}
+.hero p,.promise p,.about p,.feature-copy p,.section-head p{color:#d8d3ca;line-height:1.95;font-size:17px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 24px;border-radius:999px;text-decoration:none;transition:.25s;border:1px solid var(--line)}.btn-primary{background:var(--gold);color:#10201b;border-color:transparent;font-weight:700}.btn-primary:hover{transform:translateY(-2px);background:var(--gold2)}.btn-ghost:hover{background:rgba(255,255,255,.08)}
+.scroll-hint{position:absolute;z-index:2;bottom:24px;left:50%;transform:translateX(-50%);font-size:12px;color:#c9c4ba}
+.promise{padding-top:130px;padding-bottom:130px}.promise h2{max-width:800px;margin:18px auto}
+.collection{background:#0d241e}.section-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:45px}.section-head p{max-width:520px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.product-card{position:relative;overflow:hidden;border-radius:22px;aspect-ratio:4/5;border:1px solid var(--line);background:#10241f}.product-card img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.product-card:hover img{transform:scale(1.055)}.product-card:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(6,15,12,.92),transparent 58%)}.card-copy{position:absolute;z-index:2;bottom:0;padding:25px}.card-copy span{color:var(--gold);font-family:"Montserrat";font-size:11px;letter-spacing:.18em}.card-copy h3{margin:8px 0 0}
+.center{text-align:center;margin-top:34px}
+.feature-split{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:6vw}.feature-image img{border-radius:26px;max-height:720px;width:100%;object-fit:cover;border:1px solid var(--line)}.feature-copy ul{list-style:none;padding:0;margin:30px 0 0}.feature-copy li{padding:12px 0;border-bottom:1px solid var(--line);color:#ddd8cf}
+.about{padding-top:150px;padding-bottom:150px}.about blockquote{font-size:28px;color:var(--gold2);margin:45px 0 0}
+.contact{background:linear-gradient(135deg,#102a24,#0b1e19)}.contact-card{display:grid;grid-template-columns:1fr 1fr;gap:50px;padding:50px;border:1px solid var(--line);border-radius:28px;background:rgba(255,255,255,.035)}.contact-links{display:grid;gap:12px}.contact-links a{display:flex;justify-content:space-between;gap:18px;text-decoration:none;padding:16px 0;border-bottom:1px solid var(--line)}.contact-links span{color:var(--muted);direction:ltr}
+.floating-wa{position:fixed;z-index:40;left:22px;bottom:22px;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:#10201b;text-decoration:none;font-size:24px;box-shadow:0 12px 35px rgba(0,0,0,.35)}
+footer{display:flex;align-items:center;gap:16px;padding:28px 6vw;border-top:1px solid var(--line);color:var(--muted)}footer img{width:48px;height:48px;object-fit:cover;border-radius:10px}footer div{display:flex;flex-direction:column}footer strong{font-family:"Montserrat";letter-spacing:.22em;color:var(--gold2)}footer span{font-size:10px;letter-spacing:.18em}footer p{margin:0 0 0 auto;font-size:12px}
+.reveal{opacity:0;transform:translateY(26px);transition:.8s ease}.reveal.visible{opacity:1;transform:none}
+@media(max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}.feature-split,.contact-card{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:18px}.nav{display:none;position:absolute;top:72px;left:5vw;right:5vw;flex-direction:column;padding:18px;background:#0b1e19;border:1px solid var(--line);border-radius:16px}.nav.open{display:flex}.menu-btn{display:block}}
+@media(max-width:560px){.section{padding:78px 20px}.site-header{padding:14px 18px}.brand span{font-size:13px}.hero{padding-top:100px;background-position:62% center}.hero-overlay{background:linear-gradient(to top,rgba(6,19,15,.95) 8%,rgba(6,19,15,.68) 70%,rgba(6,19,15,.25))}.hero-actions{flex-direction:column}.btn{width:100%}.gallery{grid-template-columns:1fr}.product-card{aspect-ratio:4/5}.contact-card{padding:26px}.contact-links a{flex-direction:column}.contact-links span{text-align:right}footer{flex-wrap:wrap}footer p{width:100%;margin-top:8px}}
